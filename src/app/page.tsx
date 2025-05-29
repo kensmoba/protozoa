@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
@@ -28,16 +27,6 @@ const containerVariants = {
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-};
-
-const modalVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.3, ease: "easeOut" },
-  },
-  exit: { opacity: 0, scale: 0.9, transition: { duration: 0.2 } },
 };
 
 export default function PortfolioPage() {
@@ -134,10 +123,7 @@ export default function PortfolioPage() {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-          rel="stylesheet"
-        />
+        {/* Font moved to _document.js */}
       </Head>
       <div className="min-h-screen bg-[#121212] text-white font-inter">
         <main className="flex flex-col lg:flex-row gap-6 lg:gap-12 p-6 lg:p-10 max-w-[1400px] mx-auto">
@@ -338,17 +324,17 @@ export default function PortfolioPage() {
                     <p>
                       As part of{" "}
                       <strong>
-                        Bangkit Academy's Mobile Development Cohort
+                        Bangkit Academy&apos;s Mobile Development Cohort
                       </strong>
                       , backed by Google and Tokopedia, I hone my skills in
                       Android Studio. Studying Teknik Informatika at Universitas
-                      Indraprasta PGRI, I’m fueled by a passion to shape the
-                      future of technology.
+                      Indraprasta PGRI, I&apos;m fueled by a passion to shape
+                      the future of technology.
                     </p>
                   </section>
                   <section className="mt-8">
                     <h3 className="text-xl font-bold text-white mb-5">
-                      What I'm Doing
+                      What I&apos;m Doing
                     </h3>
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                       {[
