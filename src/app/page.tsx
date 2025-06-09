@@ -430,11 +430,6 @@ export default function PortfolioPage() {
                         <span className="text-[#FFD700] text-sm">
                           Aug 2022 — Present
                         </span>
-                        <p className="text-sm text-[#A0A0A0] font-light mt-2">
-                          Nemo enims ipsam voluptatem, blanditiis praesentium
-                          voluptum delenit atque corrupti, quos dolores et quas
-                          molestias exceptur.
-                        </p>
                       </motion.li>
                     </ol>
                   </section>
@@ -487,11 +482,6 @@ export default function PortfolioPage() {
                           <span className="text-[#FFD700] text-sm">
                             {item.date}
                           </span>
-                          <p className="text-sm text-[#A0A0A0] font-light mt-2">
-                            Nemo enims ipsam voluptatem, blanditiis praesentium
-                            voluptum delenit atque corrupti, quos dolores et
-                            quas molestias exceptur.
-                          </p>
                         </motion.li>
                       ))}
                     </ol>
@@ -540,11 +530,6 @@ export default function PortfolioPage() {
                           <span className="text-[#FFD700] text-sm">
                             {item.date}
                           </span>
-                          <p className="text-sm text-[#A0A0A0] font-light mt-2">
-                            Nemo enim ipsam voluptatem blanditiis praesentium
-                            voluptum delenit atque corrupti, quos dolores et
-                            qvuas molestias exceptur.
-                          </p>
                         </motion.li>
                       ))}
                     </ol>
