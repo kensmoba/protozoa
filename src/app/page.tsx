@@ -239,7 +239,7 @@ export default function PortfolioPage() {
                     icon: <FaLinkedinIn />,
                   },
                   {
-                    href: "https://www.instagram.com/josiah.crcn/",
+                    href: "https://www.instagram.com/josiah.code/",
                     icon: <FaInstagram />,
                   },
                 ].map((social, index) => (
@@ -293,7 +293,7 @@ export default function PortfolioPage() {
                         {page}
                       </button>
                     </motion.li>
-                  )
+                  ),
                 )}
               </ul>
             </motion.nav>
@@ -596,7 +596,7 @@ export default function PortfolioPage() {
                           <button
                             onClick={() =>
                               filterProjects(
-                                filter.toLowerCase() as ProjectCategory
+                                filter.toLowerCase() as ProjectCategory,
                               )
                             }
                             className={`text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300 ${
@@ -647,7 +647,7 @@ export default function PortfolioPage() {
                             <button
                               onClick={() => {
                                 filterProjects(
-                                  filter.toLowerCase() as ProjectCategory
+                                  filter.toLowerCase() as ProjectCategory,
                                 );
                                 setIsSidebarActive(false);
                               }}
@@ -704,7 +704,7 @@ export default function PortfolioPage() {
                                 </p>
                               </a>
                             </motion.li>
-                          )
+                          ),
                       )}
                     </ul>
                   </section>
